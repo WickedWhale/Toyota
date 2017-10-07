@@ -1,0 +1,36 @@
+[debug] [2017-10-07T19:39:20.245Z] ----------------------------------------------------------------------
+[debug] [2017-10-07T19:39:20.247Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --project toyota-f0ad8
+[debug] [2017-10-07T19:39:20.248Z] CLI Version:   3.13.1
+[debug] [2017-10-07T19:39:20.248Z] Platform:      darwin
+[debug] [2017-10-07T19:39:20.248Z] Node Version:  v6.11.4
+[debug] [2017-10-07T19:39:20.248Z] Time:          Sat Oct 07 2017 14:39:20 GMT-0500 (CDT)
+[debug] [2017-10-07T19:39:20.249Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-10-07T19:39:20.260Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-07T19:39:20.261Z] > authorizing via signed-in user
+[debug] [2017-10-07T19:39:20.262Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-10-07T19:39:20.263Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/V-P82QCXsuBhzCAU1PLUuiN3oSDg9rVifUd_oeZ6kYb_63VYm3uyh2LXV1RJXrQB',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Sat Oct 07 2017 14:39:20 GMT-0500 (CDT)
+[debug] [2017-10-07T19:39:20.442Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-07T19:39:20.464Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/toyota-f0ad8  
+ Sat Oct 07 2017 14:39:20 GMT-0500 (CDT)
+[debug] [2017-10-07T19:39:21.050Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-07T19:39:21.052Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/toyota-f0ad8/tokens  
+ Sat Oct 07 2017 14:39:21 GMT-0500 (CDT)
+[debug] [2017-10-07T19:39:21.810Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/Users/wickedwhale/Documents/GitHub/Toyota'...
+[info] 
+[debug] [2017-10-07T19:39:21.815Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/toyota-f0ad8  
+ Sat Oct 07 2017 14:39:21 GMT-0500 (CDT)
+[debug] [2017-10-07T19:39:22.219Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-07T19:39:22.220Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1032693183982/clients/_:getWebAppConfig  
+ Sat Oct 07 2017 14:39:22 GMT-0500 (CDT)
+[debug] [2017-10-07T19:39:22.513Z] <<< HTTP RESPONSE 200
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+
