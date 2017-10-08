@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Toyota DRR - The Future!</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link href="css/grayscale.min.css" rel="stylesheet">
+
+    <style type="text/css">
+      label.btn span {
+        font-size: 1.5em ;
+      }
+
+      label input[type="radio"] ~ i.fa.fa-circle-o{
+          color: white;    display: inline;
+      }
+      label input[type="radio"] ~ i.fa.fa-dot-circle-o{
+          display: none;
+      }
+      label input[type="radio"]:checked ~ i.fa.fa-circle-o{
+          display: none;
+      }
+      label input[type="radio"]:checked ~ i.fa.fa-dot-circle-o{
+          color: red;    display: inline;
+      }
+      label:hover input[type="radio"] ~ i.fa {
+      color: red;
+      }
+
+      label input[type="checkbox"] ~ i.fa.fa-square-o{
+          color: white;    display: inline;
+      }
+      label input[type="checkbox"] ~ i.fa.fa-check-square-o{
+          display: none;
+      }
+      label input[type="checkbox"]:checked ~ i.fa.fa-square-o{
+          display: none;
+      }
+      label input[type="checkbox"]:checked ~ i.fa.fa-check-square-o{
+          color: #7AA3CC;    display: inline;
+      }
+      label:hover input[type="checkbox"] ~ i.fa {
+      color: #4dffc3;
+      }
+
+      div[data-toggle="buttons"] label.active{
+          color: red;
+      }
+
+      div[data-toggle="buttons"] label {
+      display: inline-block;
+      padding: 6px 12px;
+      margin-bottom: 0;
+      font-size: 14px;
+      font-weight: normal;
+      line-height: 2em;
+      text-align: left;
+      white-space: nowrap;
+      vertical-align: top;
+      cursor: pointer;
+      background-color: none;
+      border: 0px solid 
+      #c8c8c8;
+      border-radius: 3px;
+      color: white;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      -o-user-select: none;
+      user-select: none;
+      }
+
+      div[data-toggle="buttons"] label:hover {
+      color: #4dffc3;
+      }
+
+      div[data-toggle="buttons"] label:active, div[data-toggle="buttons"] label.active {
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      }
+    </style>
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">LET'S GO PLACES</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#download">Get Started</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#question4">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Question 1 -->
+    <section id="question1" class="content-section text-center masthead">
+      <div class="container my-auto">
+        <div class="row my-auto">
+          <div class="col-lg-12 mx-auto">
+            <h2>Would you like a radio</h2>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <br>
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn active">
+                <input type="radio" name="question1" id='must'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name="question1" id='wouldbenice'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name="question1" id='doesnotamtter'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name="question1" id='notwanted'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+              </label>
+              <br><br><br><br><br><br><br><br>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <br>
+          <br>
+          <br>
+          <div class="col-lg-12">
+            <a class = "js-scroll-trigger" href="#question2">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                NEXT
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question 2 -->
+    <section id="question2" class="content-section text-center masthead">
+      <div class="container my-auto">
+        <div class="row my-auto">
+          <div class="col-lg-12 mx-auto">
+            <h2>Would you like a radio</h2>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <br>
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn active">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+              </label>
+              <br><br><br><br><br><br><br><br>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="#question1">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                PREVIOUS
+              </button>
+            </a>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="#question3">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                NEXT
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question 3 -->
+    <section id="question3" class="content-section text-center masthead">
+      <div class="container my-auto">
+        <div class="row my-auto">
+          <div class="col-lg-12 mx-auto">
+            <h2>Would you like a radio</h2>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <br>
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn active">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+              </label>
+              <br><br><br><br><br><br><br><br>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="#question2">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                PREVIOUS
+              </button>
+            </a>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="#question4">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                NEXT
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question 4 -->
+    <section id="question4" class="content-section text-center masthead">
+      <div class="container my-auto">
+        <div class="row my-auto">
+          <div class="col-lg-12 mx-auto">
+            <h2>Would you like a radio</h2>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <br>
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn active">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+              </label>
+              <br><br><br><br><br><br><br><br>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="#question3">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                PREVIOUS
+              </button>
+            </a>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="#question5">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                NEXT
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question 5 -->
+    <section id="question5" class="content-section text-center masthead">
+      <div class="container my-auto">
+        <div class="row my-auto">
+          <div class="col-lg-12 mx-auto">
+            <h2>Would you like a radio</h2>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <br>
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn active">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+              </label>
+              <br><br><br><br><br><br><br><br>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="#question4">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                PREVIOUS
+              </button>
+            </a>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="#question6">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                NEXT
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question 6 -->
+    <section id="question6" class="content-section text-center masthead">
+      <div class="container my-auto">
+        <div class="row my-auto">
+          <div class="col-lg-12 mx-auto">
+            <h2>Would you like a radio</h2>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <br>
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn active">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+              </label>
+              <br><br><br><br><br><br><br><br>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="#question5">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                PREVIOUS
+              </button>
+            </a>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="#question7">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                NEXT
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question 7 -->
+    <section id="question7" class="content-section text-center masthead">
+      <div class="container my-auto">
+        <div class="row my-auto">
+          <div class="col-lg-12 mx-auto">
+            <h2>Would you like a radio</h2>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <br>
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn active">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+              </label>
+              <br><br><br><br><br><br><br><br>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="#question6">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                PREVIOUS
+              </button>
+            </a>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="#question8">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                NEXT
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question 8 -->
+    <section id="question8" class="content-section text-center masthead">
+      <div class="container my-auto">
+        <div class="row my-auto">
+          <div class="col-lg-12 mx-auto">
+            <h2>Would you like a radio</h2>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <br>
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn active">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+              </label>
+              <br><br><br><br><br><br><br><br>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="#question7">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                PREVIOUS
+              </button>
+            </a>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="#question9">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                NEXT
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question 9 -->
+    <section id="question9" class="content-section text-center masthead">
+      <div class="container my-auto">
+        <div class="row my-auto">
+          <div class="col-lg-12 mx-auto">
+            <h2>Would you like a radio</h2>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <br>
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn active">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+              </label>
+              <br><br><br><br><br><br><br><br>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="#question8">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                PREVIOUS
+              </button>
+            </a>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="#question10">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                NEXT
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Question 10 -->
+    <section id="question10" class="content-section text-center masthead">
+      <div class="container my-auto">
+        <div class="row my-auto">
+          <div class="col-lg-12 mx-auto">
+            <h2>Would you like a radio</h2>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <br>
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+              </label>
+              <label class="btn">
+                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+              </label>
+              <br><br><br><br><br><br><br><br>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <br>
+          <br>
+          <br>
+          <div class="col-lg-12">
+            <a class = "js-scroll-trigger" href="#">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                SUBMIT
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer>
+      <div class="container text-center">
+        <p>Copyright &copy; Your Website 2017</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper/popper.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/grayscale.min.js"></script>
+
+  </body>
+
+</html>
