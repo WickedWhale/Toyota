@@ -37,7 +37,7 @@ class details(Enum):
 
 
 def Generate_Cars(num_of_cars):
-  cars = {"Camry_LE": 26000, "Camry_XLE": 26000, "Camry_XSE": 26000, "Camry_L": 26000, "Toyota_Yaris": 26000, "Toyota_Corolla": 26000, "Toyota_Avalon": 26000, "Toyota_86": 26000, "Toyota_Sienne": 26000}
+  cars = {"Camry_LE": 23000, "Camry_XLE": 26000, "Camry_XSE": 26000, "Camry_L": 26000, "Toyota_Yaris": 15000, "Toyota_Corolla": 18000, "Toyota_Avalon": 33500, "Toyota_86": 26000, "Toyota_Sienna": 29500}
   arr_cars = []
 
   def generate_car():
