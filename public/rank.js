@@ -1,11 +1,4 @@
-   /*
-		
-    phone number: <input type="text" id="phonenumber"><br>
-    <input type="submit" value="Notify Dealer" onclick="notifyDealer()"> <br>
-    <button onclick="showData()">Pull data from database</button>
-   */
-
-
+   
 
       var databaseRef = new Firebase("https://toyota-f0ad8.firebaseio.com/");
         var  OptionEnum = {
@@ -31,14 +24,120 @@
             NICE = "nice";
             IMPARTIAL = "impartial";
             NOT ="not";
-          rankCars(MUST, MUST, MUST, MUST, MUST, MUST,MUST, MUST, MUST, MUST, 25000);
+          rankCars(MUST, MUST, MUST, MUST, MUST, MUST,MUST, MUST, MUST, MUST, 32000);
           }
 
-        function rankCars(L, P, T, I, F, S, G, R, B, H, price){
+
+			        /*
+			"leather"
+			'parkingassist'
+			tv
+			infotainment
+			4wd
+			safetysense
+			glass-roof
+			rear-parking
+			blind-spot
+			high-quality-radio
+			*/
+
+
+			function getUserData(){
+
+				var leather =  document.getElementsByName("leather");
+				for(var i =0; i<leather.length; i++){
+					if (leather[i].checked){
+						var L = leather[i].id;
+					}
+				}
+
+				var parkingassist =  document.getElementsByName("parkingassist");
+				for(var i =0; i<parkingassist.length; i++){
+					if (parkingassist[i].checked){
+						var P = parkingassist[i].id;
+					}
+				}
+
+				var tv =  document.getElementsByName("tv");
+				for(var i =0; i<tv.length; i++){
+					if (tv[i].checked){
+						var T = tv[i].id;
+					}
+				}
+
+				var infotainment =  document.getElementsByName("infotainment");
+				for(var i =0; i<infotainment.length; i++){
+					if (infotainment[i].checked){
+						var I = infotainment[i].id;
+					}
+				}
+
+				var fwd =  document.getElementsByName("4wd");
+				for(var i =0; i<fwd.length; i++){
+					if (fwd[i].checked){
+						var F = fwd[i].id;
+					}
+				}
+
+				var safetysense =  document.getElementsByName("safetysense");
+				for(var i =0; i<safetysense.length; i++){
+					if (safetysense[i].checked){
+						var S = safetysense[i].id;
+					}
+				}
+
+				var glassroof=  document.getElementsByName("glass-roof");
+				for(var i =0; i<glassroof.length; i++){
+					if (glassroof[i].checked){
+						var G = glassroof[i].id;
+					}
+				}
+
+				var rearparking =  document.getElementsByName("rear-parking");
+				for(var i =0; i<rearparking.length; i++){
+					if (rearparking[i].checked){
+						var R = rearparking[i].id;
+					}
+				}
+
+				var blindspot =  document.getElementsByName("blind-spot");
+				for(var i =0; i<blindspot.length; i++){
+					if (blindspot[i].checked){
+						var B = blindspot[i].id;
+					}
+				}
+
+				var highqualityradio =  document.getElementsByName("high-quality-radio");
+				for(var i =0; i<highqualityradio.length; i++){
+					if (highqualityradio[i].checked){
+						var H = highqualityradio[i].id;
+					}
+				}
+
+				var price = document.getElementById("price").value;
+				rankCars(L, P, T, I, F, S, G, R, B, H, price)
+
+			}
+
+	function pullingRoutine(){
+		var cars = new Map();
+		databaseRef.child("cars").on('child_added', function(snapshot) {
+        var stuff = snapshot.val();
+        cars.set(snapshot.key(), stuff);
+         });
+        return cars;
+	}
+
+	function rankCars(L, P, T, I, F, S, G, R, B, H, price){
+
+		    MUST = "must";
+            NICE = "nice";
+            IMPARTIAL = "impartial";
+            NOT ="not";
           var bestAffordable;
           var bestCheaper;
           var bestExpensive;
-          var cars = new Map();
+          
           var featuresMap = new Map();
               featuresMap.set("FOUR_WHEEL_DRIVE", F);
               featuresMap.set("BLIND_SPOT_MONITOR", B);
@@ -51,11 +150,8 @@
               featuresMap.set("SAFE_SENSE", S);
               featuresMap.set("TELEVISION", T);
 
-          databaseRef.child("cars").on('child_added', function(snapshot) {
-                  var stuff = snapshot.val();
-                  cars.set(snapshot.key(), stuff);
-                });
-                console.log(cars);
+			pullingRoutine();
+			var cars = pullingRoutine();
 
 
           var carsList = Array.from(cars.keys());
@@ -92,7 +188,7 @@
           for (car in carsList){
               var name = carsList[car];
               var carsPrice = cars.get(name).price;;
-              if (carsPrice < bestAffordable.price){
+              if (carsPrice >= bestAffordable.price){
                 continue;
               } else {
                 bestCheaper = cars.get(name);
@@ -101,6 +197,9 @@
           }
 
           bestExpensive = cars.get(carsList[0]);
+          console.log(bestAffordable);
+          console.log(bestCheaper);
+          console.log(bestExpensive);
         }
 
         function scoreCar(featuresMap, car){
@@ -158,22 +257,4 @@
         return score;
       }
  
-        function notifyDealer(){
-          var customer  = document.getElementById("phonenumber").value;
-          // Twilio Credentials 
-          var accountSid = 'AC2b0b3d93f83c517cf4ff08b9871143ba'; 
-          var authToken = '4dd64c7d00e49d037f34be10e12d63c6'; 
-           
-          //require the Twilio module and create a REST client 
-          var client = require('twilio')(accountSid, authToken); 
-           
-          client.messages.create({ 
-              to: customer, 
-              from: "+6159430239", 
-              body: "Thanks for shopping with Toyota!", 
-          }, function(err, message) { 
-              console.log(message.sid); 
-          });
-
-          console.log("message sent");
-        }
+       
