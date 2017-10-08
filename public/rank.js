@@ -179,7 +179,7 @@ var cars = pullingRoutine();
             // insert car into map with score, use score car function to get score
           // sort list of cars based on score from scoremap
           // return top 30 cars
-          int i = 0;
+          var i = 0;
           for (car in carsList){
           	if(i ==0){
           		continue;
