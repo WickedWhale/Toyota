@@ -179,19 +179,22 @@ var cars = pullingRoutine();
             // insert car into map with score, use score car function to get score
           // sort list of cars based on score from scoremap
           // return top 30 cars
-          var i = 0;
+
           for (car in carsList){
+<<<<<<< HEAD
           	if(i ==0){
           		i++;
           		continue;
           	}
+=======
+>>>>>>> parent of 344801b... Merge branch 'master' of https://github.com/WickedWhale/Toyota
               var name = carsList[car];
               var carsPrice = cars.get(name).price;
               if (carsPrice > price){
                 continue;
               } else {
                 bestAffordable = cars.get(name);
-                bestAffordableCar = name;
+                affordableCar = name;
                 break;
               }
           }
@@ -203,13 +206,13 @@ var cars = pullingRoutine();
                 continue;
               } else {
                 bestCheaper = cars.get(name);
-                bestCheaperCar = name;
+                cheaperCar = name;
                 break;
               }
           }
 
           bestExpensive = cars.get(carsList[0]);
-          bestExpensiveCar = carsList[0];
+          expensiveCar = carsList[0];
 
           if (bestAffordable == undefined){
           	//console.log("Wait please1");
@@ -222,15 +225,8 @@ var cars = pullingRoutine();
 		          //console.log(bestCheaper);
 		          //console.log(bestExpensive);
 		          localStorage.setItem("bestAffordable", JSON.stringify(bestAffordable));
-		          localStorage.setItem("bestAffordableCar", bestAffordableCar);
-
-
 		          localStorage.setItem("bestCheaper", JSON.stringify(bestCheaper));
-		          localStorage.setItem("bestCheaperCar", bestCheaperCar);
-
-
 		          localStorage.setItem("bestExpensive", JSON.stringify(bestExpensive));
-		          localStorage.setItem("bestExpensiveCar", JSON.stringify(bestExpensiveCar));
 		          window.open("results.html");	
           }
         }
