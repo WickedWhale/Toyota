@@ -47,15 +47,15 @@
           <div class="row">
             <div class="col-lg-4">
                 <div class="card">
-                  <img class="card-img-top" src="../img/Toyota_86.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="../img/Toyota_86.jpg" alt="Card image cap" id="expensive-pic">
                   <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h4 class="card-title" id="expensive" style="color:red;"></h4>
+                    <p class="card-text" id="expensive-price" style="color:green;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
+                    <li class="list-group-item" id="expensive-safety">Cras justo odio</li>
+                    <li class="list-group-item" id="expensive-leather">Dapibus ac facilisis in</li>
+                    <li class="list-group-item" id="expensive-rear">Vestibulum at eros</li>
                   </ul>
                   <div class="card-block">
                     <a href="#" class="card-link">Card link</a>
@@ -65,15 +65,15 @@
               </div>
               <div class="col-lg-4">
                 <div class="card">
-                  <img class="card-img-top" src="../img/Toyota_86.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="../img/Toyota_86.jpg" alt="Card image cap" id = "best-pic">
                   <div class="card-block">
-                    <h4 class="card-title">Card title</h4>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h4 class="card-title" id="best" style="color:red;"></h4>
+                    <p class="card-text" id="best-price" style="color:green;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
+                    <li class="list-group-item" id="best-safety" >Cras justo odio</li>
+                    <li class="list-group-item" id="best-leather" >Dapibus ac facilisis in</li>
+                    <li class="list-group-item" id="best-rear" >Vestibulum at eros</li>
                   </ul>
                   <div class="card-block">
                     <a href="#" class="card-link">Card link</a>
@@ -83,15 +83,15 @@
               </div>
               <div class="col-lg-4">
                 <div class="card">
-                  <img class="card-img-top" src="../img/Toyota_86.jpg" alt="Card image cap">
+                  <img class="card-img-top" src="../img/Toyota_86.jpg" alt="Card image cap" id = "cheaper-pic">
                   <div class="card-block">
-                    <h4 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h4 class="card-title" id="cheaper" style="color:red;"></h5>
+                    <p class="card-text" id ="cheaper-price" style="color:green;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
                   <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
+                    <li class="list-group-item" id="cheaper-safety">Cras justo odio</li>
+                    <li class="list-group-item" id="cheaper-leather">Dapibus ac facilisis in</li>
+                    <li class="list-group-item" id="cheaper-rear">Vestibulum at eros</li>
                   </ul>
                   <div class="card-block">
                     <a href="#" class="card-link">Card link</a>
@@ -126,9 +126,61 @@
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
     <script type="text/javascript">
-      console.log(localStorage.getItem("bestAffordable"));
-      console.log(localStorage.getItem("bestCheaper"));
-      console.log(localStorage.getItem("bestExpensive"));
+
+      var bestAffordable = localStorage.getItem("bestAffordable");
+      var bestAffordableCar = localStorage.getItem("bestAffordableCar");
+
+      var bestCheaper = localStorage.getItem("bestCheaper");
+      var bestCheaperCar = localStorage.getItem("bestCheaperCar");
+
+      var bestExpensive = localStorage.getItem("bestExpensive");
+      var bestExpensiveCar = localStorage.getItem("bestExpensiveCar");
+
+
+      document.getElementById("expensive").innerHTML = bestExpensiveCar.substring(1, bestExpensiveCar.length - 11);
+      document.getElementById("expensive-pic").src = "../img/" + bestExpensiveCar.substring(1, bestExpensiveCar.length - 11) + ".jpg";
+
+      document.getElementById("best").innerHTML = bestAffordableCar.substring(0, bestAffordableCar.length - 10);
+      document.getElementById("best-pic").src = "../img/" + bestAffordableCar.substring(0, bestAffordableCar.length - 10) + ".jpg";
+
+      document.getElementById("cheaper").innerHTML = bestCheaperCar.substring(0, bestCheaperCar.length - 10);
+      document.getElementById("cheaper-pic").src = "../img/" + bestCheaperCar.substring(0, bestCheaperCar.length - 10) + ".jpg";
+
+
+
+      var expensiveCar = JSON.parse(bestExpensive);
+      var cheaperCar = JSON.parse(bestCheaper);
+      var affordableCar = JSON.parse(bestAffordable);
+
+      document.getElementById("expensive-price").innerHTML = "$" + expensiveCar.price;
+      document.getElementById("best-price").innerHTML = "$" + affordableCar.price;
+      document.getElementById("cheaper-price").innerHTML="$" + cheaperCar.price;
+
+
+      document.getElementById("expensive-leather").innerHTML = "Leather Seats: " + (expensiveCar["LEATHER_SEATS"]? "YES": "NO");
+      document.getElementById("best-leather").innerHTML = "Leather Seats: " + (affordableCar["LEATHER_SEATS"]? "YES": "NO");
+      document.getElementById("cheaper-leather").innerHTML= "Leather Seats: " + (cheaperCar["LEATHER_SEATS"]? "YES": "NO");
+
+
+      document.getElementById("expensive-safety").innerHTML = "Toyota Safety Sense: " + (expensiveCar["SAFE_SENSE"]? "YES": "NO");
+      document.getElementById("best-safety").innerHTML = "Toyota Safety Sense: " + (affordableCar["SAFE_SENSE"]? "YES": "NO");
+      document.getElementById("cheaper-safety").innerHTML= "Toyota Safety Sense: " + (cheaperCar["SAFE_SENSE"]? "YES": "NO");
+
+
+      document.getElementById("expensive-rear").innerHTML = "Rear View Camera: " + (expensiveCar["REAR_CAMERA"]? "YES": "NO");
+      document.getElementById("best-rear").innerHTML = "Rear View Camera: " + (affordableCar["REAR_CAMERA"]? "YES": "NO");
+      document.getElementById("cheaper-rear").innerHTML= "Rear View Camera: " + (cheaperCar["REAR_CAMERA"]? "YES": "NO");
+
+      console.log(expensiveCar.features);
+      console.log(expensiveCar.price);
+
+
+
+      
+      // console.log(localStorage.getItem("bestAffordable"));
+      // console.log(localStorage.getItem("bestCheaper"));
+      // console.log(localStorage.getItem("bestExpensive"));
+      
 
     </script>
 
