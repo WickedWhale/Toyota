@@ -117,6 +117,8 @@
 				var price = document.getElementById("price").value;
 				rankCars(L, P, T, I, F, S, G, R, B, H, price)
 
+        window.open("results.html");
+
 			}
 
 	function pullingRoutine(){
