@@ -182,8 +182,8 @@ var cars = pullingRoutine();
           var i = 0;
           for (car in carsList){
           	if(i ==0){
-          		continue;
           		i++;
+          		continue;
           	}
               var name = carsList[car];
               var carsPrice = cars.get(name).price;
