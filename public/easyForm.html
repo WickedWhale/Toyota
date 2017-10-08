@@ -20,6 +20,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
 
     <style type="text/css">
       label.btn span {
@@ -116,15 +117,52 @@
               <a class="nav-link js-scroll-trigger" href="#download">Get Started</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#question4">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#infotainment">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
+   <!-- Question 9 -->
+    <section id="blind-spot" class="content-section text-center masthead">
+      <div class="container my-auto">
+        <div class="row my-auto">
+          <div class="col-lg-12 mx-auto">
+            <h2>What is your budget?</h2>
+            <br>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <br>
+            <input type="text-center" name="price" id="price">
+          </div>
+        </div>
+        <div class="row">
+
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="#question8">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                PREVIOUS
+              </button>
+            </a>
+          </div>
+          <br>
+          <br>
+          <br>
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="#question10">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                NEXT
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Question 1 -->
-    <section id="question1" class="content-section text-center masthead">
+    <section id="leather" class="content-section text-center masthead">
       <div class="container my-auto">
         <div class="row my-auto">
           <div class="col-lg-12 mx-auto">
@@ -137,16 +175,16 @@
             <br>
             <div class="btn-group" data-toggle="buttons">
               <label class="btn active">
-                <input type="radio" name="question1" id='must'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+                <input type="radio" name="leather" id='must'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
               </label>
               <label class="btn">
-                <input type="radio" name="question1" id='wouldbenice'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+                <input type="radio" name="leather" id='nice'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
               </label>
               <label class="btn">
-                <input type="radio" name="question1" id='doesnotamtter'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+                <input type="radio" name="leather" id='impartial'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
               </label>
               <label class="btn">
-                <input type="radio" name="question1" id='notwanted'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+                <input type="radio" name="leather" id='not'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
               </label>
               <br><br><br><br><br><br><br><br>
             </div>
@@ -157,7 +195,7 @@
           <br>
           <br>
           <div class="col-lg-12">
-            <a class = "js-scroll-trigger" href="#question2">
+            <a class = "js-scroll-trigger" href="#parkingassist">
               <button class="btn-default fa-3x js-scroll-trigger" type="button">
                 NEXT
               </button>
@@ -168,7 +206,7 @@
     </section>
 
     <!-- Question 2 -->
-    <section id="question2" class="content-section text-center masthead">
+    <section id="parkingassist" class="content-section text-center masthead">
       <div class="container my-auto">
         <div class="row my-auto">
           <div class="col-lg-12 mx-auto">
@@ -181,16 +219,16 @@
             <br>
             <div class="btn-group" data-toggle="buttons">
               <label class="btn active">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+                <input type="radio" name='parkingassist' id='must'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+                <input type="radio" name='parkingassist' id='nice'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+                <input type="radio" name='parkingassist' id='impartial'>><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+                <input type="radio" name='parkingassist' id='not'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
               </label>
               <br><br><br><br><br><br><br><br>
             </div>
@@ -199,7 +237,7 @@
         <div class="row">
 
           <div class="col-lg-6">
-            <a class = "js-scroll-trigger" href="#question1">
+            <a class = "js-scroll-trigger" href="#leather">
               <button class="btn-default fa-3x js-scroll-trigger" type="button">
                 PREVIOUS
               </button>
@@ -209,7 +247,7 @@
           <br>
           <br>
           <div class="col-lg-6">
-            <a class = "js-scroll-trigger" href="#question3">
+            <a class = "js-scroll-trigger" href="#tv">
               <button class="btn-default fa-3x js-scroll-trigger" type="button">
                 NEXT
               </button>
@@ -220,7 +258,7 @@
     </section>
 
     <!-- Question 3 -->
-    <section id="question3" class="content-section text-center masthead">
+    <section id="tv" class="content-section text-center masthead">
       <div class="container my-auto">
         <div class="row my-auto">
           <div class="col-lg-12 mx-auto">
@@ -233,16 +271,16 @@
             <br>
             <div class="btn-group" data-toggle="buttons">
               <label class="btn active">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+                <input type="radio" name='tv' id='must'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+                <input type="radio" name='tv' id='nice'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+                <input type="radio" name='tv' id='impartial'>><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+                <input type="radio" name='tv' id='not'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
               </label>
               <br><br><br><br><br><br><br><br>
             </div>
@@ -251,7 +289,7 @@
         <div class="row">
 
           <div class="col-lg-6">
-            <a class = "js-scroll-trigger" href="#question2">
+            <a class = "js-scroll-trigger" href="#parkingassist">
               <button class="btn-default fa-3x js-scroll-trigger" type="button">
                 PREVIOUS
               </button>
@@ -261,7 +299,7 @@
           <br>
           <br>
           <div class="col-lg-6">
-            <a class = "js-scroll-trigger" href="#question4">
+            <a class = "js-scroll-trigger" href="#infotainment">
               <button class="btn-default fa-3x js-scroll-trigger" type="button">
                 NEXT
               </button>
@@ -272,7 +310,7 @@
     </section>
 
     <!-- Question 4 -->
-    <section id="question4" class="content-section text-center masthead">
+    <section id="infotainment" class="content-section text-center masthead">
       <div class="container my-auto">
         <div class="row my-auto">
           <div class="col-lg-12 mx-auto">
@@ -285,16 +323,16 @@
             <br>
             <div class="btn-group" data-toggle="buttons">
               <label class="btn active">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+                <input type="radio" name='infotainment' id='must'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+                <input type="radio" name='infotainment' id='nice'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+                <input type="radio" name='infotainment' id='impartial'>><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+                <input type="radio" name='infotainment' id='not'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
               </label>
               <br><br><br><br><br><br><br><br>
             </div>
@@ -303,7 +341,7 @@
         <div class="row">
 
           <div class="col-lg-6">
-            <a class = "js-scroll-trigger" href="#question3">
+            <a class = "js-scroll-trigger" href="#tv">
               <button class="btn-default fa-3x js-scroll-trigger" type="button">
                 PREVIOUS
               </button>
@@ -313,7 +351,7 @@
           <br>
           <br>
           <div class="col-lg-6">
-            <a class = "js-scroll-trigger" href="#question5">
+            <a class = "js-scroll-trigger" href="#4wd">
               <button class="btn-default fa-3x js-scroll-trigger" type="button">
                 NEXT
               </button>
@@ -324,7 +362,7 @@
     </section>
 
     <!-- Question 5 -->
-    <section id="question5" class="content-section text-center masthead">
+    <section id="4wd" class="content-section text-center masthead">
       <div class="container my-auto">
         <div class="row my-auto">
           <div class="col-lg-12 mx-auto">
@@ -337,16 +375,16 @@
             <br>
             <div class="btn-group" data-toggle="buttons">
               <label class="btn active">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+                <input type="radio" name='4wd' id='must'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+                <input type="radio" name='4wd' id='nice'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+                <input type="radio" name='4wd' id='impartial'>><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+                <input type="radio" name='4wd' id='not'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
               </label>
               <br><br><br><br><br><br><br><br>
             </div>
@@ -355,7 +393,7 @@
         <div class="row">
 
           <div class="col-lg-6">
-            <a class = "js-scroll-trigger" href="#question4">
+            <a class = "js-scroll-trigger" href="#infotainment">
               <button class="btn-default fa-3x js-scroll-trigger" type="button">
                 PREVIOUS
               </button>
@@ -365,7 +403,7 @@
           <br>
           <br>
           <div class="col-lg-6">
-            <a class = "js-scroll-trigger" href="#question6">
+            <a class = "js-scroll-trigger" href="#safetysense">
               <button class="btn-default fa-3x js-scroll-trigger" type="button">
                 NEXT
               </button>
@@ -376,7 +414,7 @@
     </section>
 
     <!-- Question 6 -->
-    <section id="question6" class="content-section text-center masthead">
+    <section id="safetysense" class="content-section text-center masthead">
       <div class="container my-auto">
         <div class="row my-auto">
           <div class="col-lg-12 mx-auto">
@@ -389,16 +427,16 @@
             <br>
             <div class="btn-group" data-toggle="buttons">
               <label class="btn active">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+                <input type="radio" name='safetysense' id='must'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+                <input type="radio" name='safetysense' id='nice'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+                <input type="radio" name='safetysense' id='impartial'>><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+                <input type="radio" name='safetysense' id='not'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
               </label>
               <br><br><br><br><br><br><br><br>
             </div>
@@ -407,7 +445,7 @@
         <div class="row">
 
           <div class="col-lg-6">
-            <a class = "js-scroll-trigger" href="#question5">
+            <a class = "js-scroll-trigger" href="#4wd">
               <button class="btn-default fa-3x js-scroll-trigger" type="button">
                 PREVIOUS
               </button>
@@ -428,11 +466,11 @@
     </section>
 
     <!-- Question 7 -->
-    <section id="question7" class="content-section text-center masthead">
+    <section id='glass-roof'class="content-section text-center masthead">
       <div class="container my-auto">
         <div class="row my-auto">
           <div class="col-lg-12 mx-auto">
-            <h2>Do you want a glass root?</h2>
+            <h2>Do you want a glass roof?</h2>
             <br>
           </div>
         </div>
@@ -441,16 +479,16 @@
             <br>
             <div class="btn-group" data-toggle="buttons">
               <label class="btn active">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+                <input type="radio" name='glass-roof' id='must'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+                <input type="radio" name='glass-roof' id='nice'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+                <input type="radio" name='glass-roof' id='impartial'>><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+                <input type="radio" name='glass-roof' id='not'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
               </label>
               <br><br><br><br><br><br><br><br>
             </div>
@@ -459,7 +497,7 @@
         <div class="row">
 
           <div class="col-lg-6">
-            <a class = "js-scroll-trigger" href="#question6">
+            <a class = "js-scroll-trigger" href="#safetysense">
               <button class="btn-default fa-3x js-scroll-trigger" type="button">
                 PREVIOUS
               </button>
@@ -480,7 +518,7 @@
     </section>
 
     <!-- Question 8 -->
-    <section id="question8" class="content-section text-center masthead">
+    <section id="rear-parking" class="content-section text-center masthead">
       <div class="container my-auto">
         <div class="row my-auto">
           <div class="col-lg-12 mx-auto">
@@ -493,16 +531,16 @@
             <br>
             <div class="btn-group" data-toggle="buttons">
               <label class="btn active">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+                <input type="radio" name='rear-parking' id='must'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+                <input type="radio" name='rear-parking' id='nice'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+                <input type="radio" name='rear-parking' id='impartial'>><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+                <input type="radio" name='rear-parking' id='not'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
               </label>
               <br><br><br><br><br><br><br><br>
             </div>
@@ -532,7 +570,7 @@
     </section>
 
     <!-- Question 9 -->
-    <section id="question9" class="content-section text-center masthead">
+    <section id="blind-spot" class="content-section text-center masthead">
       <div class="container my-auto">
         <div class="row my-auto">
           <div class="col-lg-12 mx-auto">
@@ -545,16 +583,16 @@
             <br>
             <div class="btn-group" data-toggle="buttons">
               <label class="btn active">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+                <input type="radio" name='blind-spot' id='must'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+                <input type="radio" name='blind-spot' id='nice'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+                <input type="radio" name='blind-spot' id='impartial'>><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+                <input type="radio" name='blind-spot' id='not'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
               </label>
               <br><br><br><br><br><br><br><br>
             </div>
@@ -584,7 +622,7 @@
     </section>
 
     <!-- Question 10 -->
-    <section id="question10" class="content-section text-center masthead">
+    <section id="high-quality-radio" class="content-section text-center masthead">
       <div class="container my-auto">
         <div class="row my-auto">
           <div class="col-lg-12 mx-auto">
@@ -597,28 +635,41 @@
             <br>
             <div class="btn-group" data-toggle="buttons">
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
+                <input type="radio" name='high-quality-radio' id='must'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Must Have</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
+                <input type="radio" name='high-quality-radio' id='nice'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Would Be Nice</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
+                <input type="radio" name='high-quality-radio' id='impartial'>><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Doesn't Matter</span>
               </label>
               <label class="btn">
-                <input type="radio" name='gender2'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
+                <input type="radio" name='shigh-quality-radio' id='not'><i class="fa fa-circle-o fa-5x"></i><i class="fa fa-dot-circle-o fa-5x"></i><span> Not Wanted</span>
               </label>
               <br><br><br><br><br><br><br><br>
             </div>
           </div>
         </div>
         <div class="row">
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="#question9">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+                PREVIOUS
+              </button>
+            </a>
+          </div>
           <br>
           <br>
           <br>
+<<<<<<< HEAD
+          <div class="col-lg-6">
+            <a class = "js-scroll-trigger" href="results.html">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+=======
           <div class="col-lg-12">
             <a class = "js-scroll-trigger" href="#">
-              <button class="btn-default fa-3x js-scroll-trigger" type="button">
+              <button class="btn-default fa-3x js-scroll-trigger" type="button" onclick="getUserData()">
+>>>>>>> fcbccbdb579c93d0cd681a05bce119700089b36e
                 SUBMIT
               </button>
             </a>
@@ -677,6 +728,8 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/grayscale.min.js"></script>
+    <script type="text/javascript" src="form.js"></script>
+    <script type="text/javascript" src="rank.js"></script>
 
   </body>
 
