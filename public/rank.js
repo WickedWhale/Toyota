@@ -115,16 +115,16 @@
 				}
 
 				var price = document.getElementById("price").value;
-				rankCars(L, P, T, I, F, S, G, R, B, H, price)
+				rankCars(L, P, T, I, F, S, G, R, B, H, price); 
 
-        window.open("results.html");
-
+        		//window.open("results.html");
 			}
 
 	function pullingRoutine(){
 		var cars = new Map();
 		databaseRef.child("cars").on('child_added', function(snapshot) {
         var stuff = snapshot.val();
+
         cars.set(snapshot.key(), stuff);
          });
         return cars;
@@ -139,6 +139,9 @@
           var bestAffordable;
           var bestCheaper;
           var bestExpensive;
+          var affordableCar;
+          var cheaperCar;
+          var expensiveCar;
           
           var featuresMap = new Map();
               featuresMap.set("FOUR_WHEEL_DRIVE", F);
@@ -152,8 +155,9 @@
               featuresMap.set("SAFE_SENSE", S);
               featuresMap.set("TELEVISION", T);
 
-			pullingRoutine();
-			var cars = pullingRoutine();
+var cars = pullingRoutine();
+			cars = pullingRoutine();
+			
 
 
           var carsList = Array.from(cars.keys());
@@ -183,6 +187,7 @@
                 continue;
               } else {
                 bestAffordable = cars.get(name);
+                affordableCar = name;
                 break;
               }
           }
@@ -194,14 +199,29 @@
                 continue;
               } else {
                 bestCheaper = cars.get(name);
+                cheaperCar = name;
                 break;
               }
           }
 
           bestExpensive = cars.get(carsList[0]);
-          console.log(bestAffordable);
-          console.log(bestCheaper);
-          console.log(bestExpensive);
+          expensiveCar = carsList[0];
+
+          if (bestAffordable == undefined){
+          	//console.log("Wait please1");
+          	window.alert("Are you ready to see the cars., if yes please click SUBMIT!");
+
+          } else {
+
+
+		          //console.log(bestAffordable);
+		          //console.log(bestCheaper);
+		          //console.log(bestExpensive);
+		          localStorage.setItem("bestAffordable", JSON.stringify(bestAffordable));
+		          localStorage.setItem("bestCheaper", JSON.stringify(bestCheaper));
+		          localStorage.setItem("bestExpensive", JSON.stringify(bestExpensive));
+		          window.open("results.html");	
+          }
         }
 
         function scoreCar(featuresMap, car){

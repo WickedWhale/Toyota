@@ -1,36 +1,36 @@
-[debug] [2017-10-07T21:38:33.685Z] ----------------------------------------------------------------------
-[debug] [2017-10-07T21:38:33.687Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --project toyota-f0ad8
-[debug] [2017-10-07T21:38:33.687Z] CLI Version:   3.13.0
-[debug] [2017-10-07T21:38:33.687Z] Platform:      darwin
-[debug] [2017-10-07T21:38:33.687Z] Node Version:  v6.11.3
-[debug] [2017-10-07T21:38:33.688Z] Time:          Sat Oct 07 2017 14:38:33 GMT-0700 (PDT)
-[debug] [2017-10-07T21:38:33.688Z] ----------------------------------------------------------------------
+[debug] [2017-10-08T13:53:53.001Z] ----------------------------------------------------------------------
+[debug] [2017-10-08T13:53:53.003Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --project toyota-f0ad8
+[debug] [2017-10-08T13:53:53.003Z] CLI Version:   3.13.0
+[debug] [2017-10-08T13:53:53.003Z] Platform:      darwin
+[debug] [2017-10-08T13:53:53.003Z] Node Version:  v6.11.3
+[debug] [2017-10-08T13:53:53.004Z] Time:          Sun Oct 08 2017 06:53:53 GMT-0700 (PDT)
+[debug] [2017-10-08T13:53:53.004Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2017-10-07T21:38:33.698Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2017-10-07T21:38:33.699Z] > authorizing via signed-in user
-[debug] [2017-10-07T21:38:33.700Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2017-10-07T21:38:33.700Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/3PhYnQBT2qB72knGqMbsyKEXaOoDCKA-1jvDn6QXSZY',
+[debug] [2017-10-08T13:53:53.019Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2017-10-08T13:53:53.019Z] > authorizing via signed-in user
+[debug] [2017-10-08T13:53:53.021Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-10-08T13:53:53.021Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/3PhYnQBT2qB72knGqMbsyKEXaOoDCKA-1jvDn6QXSZY',
   client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
   client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
   grant_type: 'refresh_token',
   scope: 'email https://www.googleapis.com/auth/cloud-platform https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
- Sat Oct 07 2017 14:38:33 GMT-0700 (PDT)
-[debug] [2017-10-07T21:38:33.878Z] <<< HTTP RESPONSE 200
-[debug] [2017-10-07T21:38:33.888Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/toyota-f0ad8  
- Sat Oct 07 2017 14:38:33 GMT-0700 (PDT)
-[debug] [2017-10-07T21:38:34.438Z] <<< HTTP RESPONSE 200
-[debug] [2017-10-07T21:38:34.438Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/toyota-f0ad8/tokens  
- Sat Oct 07 2017 14:38:34 GMT-0700 (PDT)
-[debug] [2017-10-07T21:38:34.947Z] <<< HTTP RESPONSE 200
+ Sun Oct 08 2017 06:53:53 GMT-0700 (PDT)
+[debug] [2017-10-08T13:53:53.186Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-08T13:53:53.197Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/toyota-f0ad8  
+ Sun Oct 08 2017 06:53:53 GMT-0700 (PDT)
+[debug] [2017-10-08T13:53:53.751Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-08T13:53:53.752Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/toyota-f0ad8/tokens  
+ Sun Oct 08 2017 06:53:53 GMT-0700 (PDT)
+[debug] [2017-10-08T13:53:54.259Z] <<< HTTP RESPONSE 200
 [info] 
 [info] === Serving from '/Users/oumarkaraga/Documents/GitHub/Toyota'...
 [info] 
-[debug] [2017-10-07T21:38:34.951Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/toyota-f0ad8  
- Sat Oct 07 2017 14:38:34 GMT-0700 (PDT)
-[debug] [2017-10-07T21:38:35.556Z] <<< HTTP RESPONSE 200
-[debug] [2017-10-07T21:38:35.557Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1032693183982/clients/_:getWebAppConfig  
- Sat Oct 07 2017 14:38:35 GMT-0700 (PDT)
-[debug] [2017-10-07T21:38:36.038Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-08T13:53:54.262Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/toyota-f0ad8  
+ Sun Oct 08 2017 06:53:54 GMT-0700 (PDT)
+[debug] [2017-10-08T13:53:54.667Z] <<< HTTP RESPONSE 200
+[debug] [2017-10-08T13:53:54.668Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/1032693183982/clients/_:getWebAppConfig  
+ Sun Oct 08 2017 06:53:54 GMT-0700 (PDT)
+[debug] [2017-10-08T13:53:55.079Z] <<< HTTP RESPONSE 200
 [info] i  hosting: Serving hosting files from: public
 [info] ✔  hosting: Local server: http://localhost:5000
 
