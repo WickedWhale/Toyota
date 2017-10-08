@@ -21,6 +21,14 @@
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
     <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
+
+    <style type="text/css">
+
+      .hover:hover {
+         border:4px solid red;
+         box-shadow: 0 0 11px rgba(33,33,33,.2);
+      }
+    </style>
   </head>
 
   <body id="page-top">
@@ -36,7 +44,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+              <a class="nav-link js-scroll-trigger" href="#Get Started">About</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#download">Get Started</a>
@@ -57,7 +65,7 @@
             <div class="col-lg-8 mx-auto">
               <h1 class="brand-heading">Toyota</h1>
               <p class="intro-text">Build your car one question at a time with Toyota's Dynamic Realtime Recommender.</p>
-              <a href="#about" class="btn btn-circle js-scroll-trigger">
+              <a href="#Get Started" class="btn btn-circle js-scroll-trigger">
                 <i class="fa fa-angle-double-down animated"></i>
               </a>
             </div>
@@ -66,64 +74,22 @@
       </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="content-section text-center">
+    <!-- Get Started Section -->
+    <section id="Get Started" class="content-section text-center">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2>About Toyota's Dynamic Realtime Recommender</h2>
-            <p>Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now, simply download the template on
-              <a href="http://startbootstrap.com/template-overviews/grayscale/">the preview page</a>. The theme is open source, and you can use it for any purpose, personal or commercial.</p>
-            <p>This theme features stock photos by
-              <a href="http://gratisography.com/">Gratisography</a>
-              along with a custom Google Maps skin courtesy of
-              <a href="http://snazzymaps.com/">Snazzy Maps</a>.</p>
-            <p>Grayscale includes full HTML, CSS, and custom JavaScript files along with SASS and LESS files for easy customization!</p>
-          </div>
-        </div>
-      </div>
-
-          phone number: <input type="text" id="phonenumber"><br>
-    <input type="submit" value="Notify Dealer" onclick="notifyDealer()"> <br>
-    <button onclick="showData()">Pull data from database</button>
-    </section>
-
-    <!-- Download Section -->
-    <section id="download" class="download-section content-section text-center">
-      <div class="container">
-        <div class="col-lg-6 mx-auto">
-          <h2>Download Grayscale</h2>
-          <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-          <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-        </div>
-        <div class="col-lg-6 mx-auto">
-          <h2>Download Grayscale</h2>
-          <p>You can download Grayscale for free on the preview page at Start Bootstrap.</p>
-          <a href="http://startbootstrap.com/template-overviews/grayscale/" class="btn btn-default btn-lg">Visit Download Page</a>
-        </div>
-      </div>
-
-    <!--
-    <form onsubmit="return collectData()">
-          username: <input type="text" id="username"><br>
-          <input type="submit" value="Submit">
-    </form>
-    -->
-
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="content-section text-center">
-      <div class="container">
-        <div class="row">
-          <div href="" class="col-lg-6 mx-auto">
-            <h2>LET'S FIND YOU A CAR!</h2>
-            <p>Let us know what you are looking for and we'll find the best match for you!.</p>
-          </div>
-          <div href="/easyForm.html" class="col-lg-6 mx-auto">
-            <h2>YOU GOT IT FROM HERE!</h2>
-            <p>You have the freedom to create you own car. Here is your canves!</p>
-          </div>
+          <a href="easyForm.html" class="col-lg-6 mx-auto hover">
+            <div class="col-lg-6 mx-auto">
+              <h2>LET'S FIND YOU A CAR!</h2>
+              <p>Let us know what you are looking for and we'll find the best match for you!.</p>
+            </div>
+          </a>
+          <a href="easyForm.html" class="col-lg-6 mx-auto hover">
+            <div class="col-lg-6 mx-auto">
+              <h2>YOU GOT IT FROM HERE!</h2>
+              <p>You have the freedom to create you own car. Here is your canves!</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>

@@ -11,7 +11,7 @@
     <title>Toyota DRR - The Future!</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -21,34 +21,18 @@
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
 
-    <style>
-      html,body{
-        width: 100%;
-        height: 100%;
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <style type="text/css">
+      .card {
+        color: black;
       }
 
-      .result {
-        display: table;
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        color: white;
-        background-color: black;
-      }
-
-      .car-result {
-        width: 100%;
-        height: 300px;
-        text-align: center;
-        color: white;
-        background: url("../img/car.jpg");
-        background: -webkit-linear-gradient(left, 
-          rgba(0,0,0,1) 0%, 
-          rgba(0,0,0,0) 20%,
-          rgba(0,0,0,0) 60%,
-          rgba(0,0,0,1) 100%
-        ),
-        url("../img/car.jpg");
+      .card:hover {
+         border:4px solid #b217b4;
+         box-shadow: 0 0 11px rgba(33,33,33,.2);
       }
     </style>
 
@@ -56,50 +40,70 @@
 
   <body id="page-top">
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">LET'S GO PLACES</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#download">Get Started</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/easyForm.html" ">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Intro Header -->
-    <header class="result">
+    <!-- Contact Section -->
+    <section id="" class="text-center masthead">
       <div class="intro-body">
         <div class="container">
           <div class="row">
-            <div class="car-result">
-            </div>
-          </div>
-          <div class="row">
-            <div class="car-result">
-              <h5>RESULT 1</h5>
-            </div>
-          </div>
-          <div class="row">
-            <div class="car-result">
+            <div class="col-lg-4">
+                <div class="card">
+                  <img class="card-img-top" src="../img/Toyota_86.jpg" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
+                  <div class="card-block">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card">
+                  <img class="card-img-top" src="../img/Toyota_86.jpg" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">Card title</h4>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
+                  <div class="card-block">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card">
+                  <img class="card-img-top" src="../img/Toyota_86.jpg" alt="Card image cap">
+                  <div class="card-block">
+                    <h4 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
+                  <div class="card-block">
+                    <a href="#" class="card-link">Card link</a>
+                    <a href="#" class="card-link">Another link</a>
+                  </div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </header>
+      </h4>
+    </div>
+    </section>
 
     <!-- Footer -->
     <footer>
