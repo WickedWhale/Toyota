@@ -1,4 +1,4 @@
-   
+
 
       var databaseRef = new Firebase("https://toyota-f0ad8.firebaseio.com/");
         var  OptionEnum = {
@@ -139,9 +139,9 @@
           var bestAffordable;
           var bestCheaper;
           var bestExpensive;
-          var affordableCar;
-          var cheaperCar;
-          var expensiveCar;
+          var bestAffordableCar;
+          var bestcheaperCar;
+          var bestExpensiveCar;
           
           var featuresMap = new Map();
               featuresMap.set("FOUR_WHEEL_DRIVE", F);
@@ -179,22 +179,20 @@ var cars = pullingRoutine();
             // insert car into map with score, use score car function to get score
           // sort list of cars based on score from scoremap
           // return top 30 cars
-
+      var i = 0;
           for (car in carsList){
-<<<<<<< HEAD
+
           	if(i ==0){
           		i++;
           		continue;
           	}
-=======
->>>>>>> parent of 344801b... Merge branch 'master' of https://github.com/WickedWhale/Toyota
               var name = carsList[car];
               var carsPrice = cars.get(name).price;
               if (carsPrice > price){
                 continue;
               } else {
                 bestAffordable = cars.get(name);
-                affordableCar = name;
+                bestAffordableCar = name;
                 break;
               }
           }
@@ -206,13 +204,13 @@ var cars = pullingRoutine();
                 continue;
               } else {
                 bestCheaper = cars.get(name);
-                cheaperCar = name;
+                bestCheaperCar = name;
                 break;
               }
           }
 
           bestExpensive = cars.get(carsList[0]);
-          expensiveCar = carsList[0];
+          bestExpensiveCar = carsList[0];
 
           if (bestAffordable == undefined){
           	//console.log("Wait please1");
@@ -224,10 +222,17 @@ var cars = pullingRoutine();
 		          //console.log(bestAffordable);
 		          //console.log(bestCheaper);
 		          //console.log(bestExpensive);
-		          localStorage.setItem("bestAffordable", JSON.stringify(bestAffordable));
-		          localStorage.setItem("bestCheaper", JSON.stringify(bestCheaper));
-		          localStorage.setItem("bestExpensive", JSON.stringify(bestExpensive));
-		          window.open("results.html");	
+		                    localStorage.setItem("bestAffordable", JSON.stringify(bestAffordable));
+              localStorage.setItem("bestAffordableCar", bestAffordableCar);
+
+
+              localStorage.setItem("bestCheaper", JSON.stringify(bestCheaper));
+              localStorage.setItem("bestCheaperCar", bestCheaperCar);
+
+
+              localStorage.setItem("bestExpensive", JSON.stringify(bestExpensive));
+              localStorage.setItem("bestExpensiveCar", JSON.stringify(bestExpensiveCar));
+              window.open("results.html");  
           }
         }
 
