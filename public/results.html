@@ -11,7 +11,7 @@
     <title>Toyota DRR - The Future!</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -20,24 +20,51 @@
 
     <!-- Custom styles for this template -->
     <link href="css/grayscale.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
 
     <style type="text/css">
+
+      .masthead {
+        background: white;
+      }
+
+      .navbar {
+        text-shadow: 3px 2px black;
+      }
+
       .card {
         color: black;
+        box-shadow: 0 0 16px rgba(33,33,33,.2);
       }
       .card:hover {
-         border:4px solid #b217b4;
+         border:4px solid black;
          box-shadow: 0 0 11px rgba(33,33,33,.2);
       }
     </style>
-
   </head>
 
   <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">LET'S GO PLACES</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#Get Started">Get Started</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <!-- Contact Section -->
     <section id="" class="text-center masthead">
@@ -46,55 +73,70 @@
           <div class="row">
             <div class="col-lg-4">
                 <div class="card">
+                  <div class="my-auto" style="background-color:black;padding-top:20px;">
+                    <h4 class="" style="color:white">expensive</h4>
+                  </div>
                   <img class="card-img-top" src="../img/Toyota_86.jpg" alt="Card image cap" id="expensive-pic">
                   <div class="card-block">
                     <h4 class="card-title" id="expensive" style="color:red;"></h4>
                     <p class="card-text" id="expensive-price" style="color:green;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
                   <ul class="list-group list-group-flush">
+                    <li class="list-group-item" id="">put model number here dude</li>
                     <li class="list-group-item" id="expensive-safety">Cras justo odio</li>
                     <li class="list-group-item" id="expensive-leather">Dapibus ac facilisis in</li>
                     <li class="list-group-item" id="expensive-rear">Vestibulum at eros</li>
+                    <li class="list-group-item" id="">rest of features</li>
                   </ul>
-                  <div class="card-block">
-                    <a href="https://seventh-azimuth-160217.firebaseapp.com/" class="card-link">Augmented Version of Car</a>
-                    <a href="https://seventh-azimuth-160217.firebaseapp.com/" class="card-link">Another link</a>
+                  <div class="my-auto" style="background-color:black;padding-top:10px;">
+                    <a href="https://seventh-azimuth-160217.firebaseapp.com/" class="card-link" style="color:white">Augmented Version of Car</a>
+                    <a href="https://seventh-azimuth-160217.firebaseapp.com/" class="card-link" style="color:white">Another link</a>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="card">
+                  <div class="my-auto" style="background-color:black;padding-top:20px;">
+                    <h4 class="" style="color:white">Best MAtch</h4>
+                  </div>
                   <img class="card-img-top" src="../img/Toyota_86.jpg" alt="Card image cap" id = "best-pic">
                   <div class="card-block">
                     <h4 class="card-title" id="best" style="color:red;"></h4>
                     <p class="card-text" id="best-price" style="color:green;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
                   <ul class="list-group list-group-flush">
+                    <li class="list-group-item" id="">put model number here dude</li>
                     <li class="list-group-item" id="best-safety" >Cras justo odio</li>
                     <li class="list-group-item" id="best-leather" >Dapibus ac facilisis in</li>
                     <li class="list-group-item" id="best-rear" >Vestibulum at eros</li>
+                    <li class="list-group-item" id="">rest of features</li>
                   </ul>
-                  <div class="card-block">
-                    <a href="https://seventh-azimuth-160217.firebaseapp.com/" class="card-link">Augmented Version of Car</a>
-                    <a href="https://seventh-azimuth-160217.firebaseapp.com/" class="card-link">Another link</a>
+                  <div class="my-auto" style="background-color:black;padding-top:10px;">
+                    <a href="https://seventh-azimuth-160217.firebaseapp.com/" class="card-link" style="color:white">Augmented Version of Car</a>
+                    <a href="https://seventh-azimuth-160217.firebaseapp.com/" class="card-link" style="color:white">Another link</a>
                   </div>
                 </div>
               </div>
               <div class="col-lg-4">
                 <div class="card">
+                  <div class="my-auto" style="background-color:black;padding-top:20px;">
+                    <h4 class="" style="color:white">Cheaper</h4>
+                  </div>
                   <img class="card-img-top" src="../img/Toyota_86.jpg" alt="Card image cap" id = "cheaper-pic">
                   <div class="card-block">
                     <h4 class="card-title" id="cheaper" style="color:red;"></h5>
                     <p class="card-text" id ="cheaper-price" style="color:green;">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                   </div>
                   <ul class="list-group list-group-flush">
+                    <li class="list-group-item" id="">put model number here dude</li>
                     <li class="list-group-item" id="cheaper-safety">Cras justo odio</li>
                     <li class="list-group-item" id="cheaper-leather">Dapibus ac facilisis in</li>
                     <li class="list-group-item" id="cheaper-rear">Vestibulum at eros</li>
+                    <li class="list-group-item" id="">rest of features</li>
                   </ul>
-                  <div class="card-block">
-                    <a href="https://seventh-azimuth-160217.firebaseapp.com/" class="card-link">Augmented Version of Car</a>
-                    <a href="https://seventh-azimuth-160217.firebaseapp.com/" class="card-link">Another link</a>
+                  <div class="my-auto" style="background-color:black;padding-top:10px;">
+                    <a href="https://seventh-azimuth-160217.firebaseapp.com/" class="card-link" style="color:white">Augmented Version of Car</a>
+                    <a href="https://seventh-azimuth-160217.firebaseapp.com/" class="card-link" style="color:white">Another link</a>
                   </div>
               </div>
             </div>
@@ -160,7 +202,7 @@
       // console.log(localStorage.getItem("bestExpensive"));
       
     </script>
-
+  
   </body>
 
 </html>
