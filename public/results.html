@@ -143,15 +143,15 @@
       document.getElementById("expensive-price").innerHTML = "$" + expensiveCar.price;
       document.getElementById("best-price").innerHTML = "$" + affordableCar.price;
       document.getElementById("cheaper-price").innerHTML="$" + cheaperCar.price;
-      document.getElementById("expensive-leather").innerHTML = "Leather Seats: " + (expensiveCar["LEATHER_SEATS"]? "YES": "NO");
-      document.getElementById("best-leather").innerHTML = "Leather Seats: " + (affordableCar["LEATHER_SEATS"]? "YES": "NO");
-      document.getElementById("cheaper-leather").innerHTML= "Leather Seats: " + (cheaperCar["LEATHER_SEATS"]? "YES": "NO");
-      document.getElementById("expensive-safety").innerHTML = "Toyota Safety Sense: " + (expensiveCar["SAFE_SENSE"]? "YES": "NO");
-      document.getElementById("best-safety").innerHTML = "Toyota Safety Sense: " + (affordableCar["SAFE_SENSE"]? "YES": "NO");
-      document.getElementById("cheaper-safety").innerHTML= "Toyota Safety Sense: " + (cheaperCar["SAFE_SENSE"]? "YES": "NO");
-      document.getElementById("expensive-rear").innerHTML = "Rear View Camera: " + (expensiveCar["REAR_CAMERA"]? "YES": "NO");
-      document.getElementById("best-rear").innerHTML = "Rear View Camera: " + (affordableCar["REAR_CAMERA"]? "YES": "NO");
-      document.getElementById("cheaper-rear").innerHTML= "Rear View Camera: " + (cheaperCar["REAR_CAMERA"]? "YES": "NO");
+      document.getElementById("expensive-leather").innerHTML = "Leather Seats: " + (expensiveCar.features["LEATHER_SEATS"]? "YES": "NO");
+      document.getElementById("best-leather").innerHTML = "Leather Seats: " + (affordableCar.features["LEATHER_SEATS"]? "YES": "NO");
+      document.getElementById("cheaper-leather").innerHTML= "Leather Seats: " + (cheaperCar.features["LEATHER_SEATS"]? "YES": "NO");
+      document.getElementById("expensive-safety").innerHTML = "Toyota Safety Sense: " + (expensiveCar.features["SAFE_SENSE"]? "YES": "NO");
+      document.getElementById("best-safety").innerHTML = "Toyota Safety Sense: " + (affordableCar.features["SAFE_SENSE"]? "YES": "NO");
+      document.getElementById("cheaper-safety").innerHTML= "Toyota Safety Sense: " + (cheaperCar.features["SAFE_SENSE"]? "YES": "NO");
+      document.getElementById("expensive-rear").innerHTML = "Rear View Camera: " + (expensiveCar.features["REAR_CAMERA"]? "YES": "NO");
+      document.getElementById("best-rear").innerHTML = "Rear View Camera: " + (affordableCar.features["REAR_CAMERA"]? "YES": "NO");
+      document.getElementById("cheaper-rear").innerHTML= "Rear View Camera: " + (cheaperCar.features["REAR_CAMERA"]? "YES": "NO");
       console.log(expensiveCar.features);
       console.log(expensiveCar.price);
       
