@@ -18,7 +18,7 @@
            }
 
 
-        
+
         function showData(){
             MUST = "must";
             NICE = "nice";
@@ -115,7 +115,7 @@
 				}
 
 				var price = document.getElementById("price").value;
-				rankCars(L, P, T, I, F, S, G, R, B, H, price); 
+				rankCars(L, P, T, I, F, S, G, R, B, H, price);
 
         		//window.open("results.html");
 			}
@@ -142,7 +142,7 @@
           var bestAffordableCar;
           var bestcheaperCar;
           var bestExpensiveCar;
-          
+
           var featuresMap = new Map();
               featuresMap.set("FOUR_WHEEL_DRIVE", F);
               featuresMap.set("BLIND_SPOT_MONITOR", B);
@@ -157,7 +157,7 @@
 
 var cars = pullingRoutine();
 			cars = pullingRoutine();
-			
+
 
 
           var carsList = Array.from(cars.keys());
@@ -173,7 +173,7 @@ var cars = pullingRoutine();
             return scoremap.get(b) - scoremap.get(a);
           });
           console.log(carsList[0], scoremap.get(carsList[0]));
-          
+
           //var scoreMap; // map of car to score
           // for loop through cars in inventory
             // insert car into map with score, use score car function to get score
@@ -231,8 +231,8 @@ var cars = pullingRoutine();
 
 
               localStorage.setItem("bestExpensive", JSON.stringify(bestExpensive));
-              localStorage.setItem("bestExpensiveCar", JSON.stringify(bestExpensiveCar));
-              window.open("results.html");  
+              localStorage.setItem("bestExpensiveCar", bestExpensiveCar);
+              window.open("results.html");
           }
         }
 
@@ -247,9 +247,9 @@ var cars = pullingRoutine();
           for (feature in featuresList){
             var key = featuresList[feature];
             var HAVE_MOD = 1.2;
-            var MISS_MOD = 1.2;     
+            var MISS_MOD = 1.2;
             //console.log(key);
-            if(car.features[key])   { 
+            if(car.features[key])   {
              switch(featuresMap.get(key)){
 
                 case NOT:
@@ -286,9 +286,7 @@ var cars = pullingRoutine();
                   score -= 0;
                   break;
                 }
-              }   
+              }
         }
         return score;
       }
- 
-       
